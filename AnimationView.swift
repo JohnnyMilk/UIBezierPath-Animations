@@ -9,7 +9,6 @@
 import UIKit
 
 class AnimationView: UIView {
-    let path2Path = UIBezierPath()
     
     override func draw(_ rect: CGRect) {
         // Set up the appearance of the path.
@@ -31,6 +30,7 @@ class AnimationView: UIView {
     }
     
     private func getPath() -> UIBezierPath {
+        let path2Path = UIBezierPath()
         path2Path.move(to: CGPoint(x: 113.15, y: 327.81))
         path2Path.addCurve(to: CGPoint(x: 155.82, y: 294.38), controlPoint1: CGPoint(x: 133.77, y: 319.06), controlPoint2: CGPoint(x: 148, y: 307.91))
         path2Path.addCurve(to: CGPoint(x: 147.68, y: 209.8), controlPoint1: CGPoint(x: 167.55, y: 274.07), controlPoint2: CGPoint(x: 170.56, y: 244.28))
